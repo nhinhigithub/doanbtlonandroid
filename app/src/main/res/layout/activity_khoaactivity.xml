@@ -21,53 +21,63 @@
             <TextView
                 android:textStyle="bold|normal"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:text="Mã khoa:"/>
             <EditText
                 android:id="@+id/edtMAKHOA"
                 android:layout_span="3"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:hint="mã khoa"/>
         </TableRow>
         <TableRow>
             <TextView
                 android:textStyle="bold|normal"
                 android:textColor="@color/white"
-                android:textSize="25sp"
-                android:text="Tên kho:"/>
+                android:textSize="20sp"
+                android:text="Tên khoa:"/>
             <EditText
                 android:id="@+id/edtTENKHOA"
                 android:layout_span="3"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:hint="tên khoa"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btnThemKHOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/btnSuaKHOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sửa"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/btnXoaKHOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xóa"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:textSize="15sp" />
         </TableRow>
         <LinearLayout
             android:padding="15dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/btnThemKHOA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thêm KHOA"
-                android:textSize="15sp" />
-            <Button
-                android:id="@+id/btnSuaKHOA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sửa KHOA"
-                android:textSize="15sp" />
-            <Button
-                android:id="@+id/btnXoaKHOA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Xóa KHOA"
-                android:textSize="15sp" />
             <ListView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/lvKHOA"/>
         </LinearLayout>
     </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
